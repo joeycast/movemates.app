@@ -51,7 +51,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+    background: linear-gradient(135deg, #5856D6 0%, #4B68DC 40%, #3D7AE3 65%, #007AFF 100%);
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -320,7 +320,7 @@ nav {
 /* Download Section */
 .download {
     padding: 100px 20px;
-    background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+    background: linear-gradient(135deg, #5856D6 0%, #4B68DC 40%, #3D7AE3 65%, #007AFF 100%);
     color: white;
     text-align: center;
 }

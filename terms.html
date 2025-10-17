@@ -4,48 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Movemates</title>
-    <meta name="description" content="Movemates Terms of Service - Rules and guidelines for using our service.">
+    <meta name="description" content="Movemates Terms of Service - Legal agreement between Brink 13 Labs, LLC and users of the Movemates app.">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .legal-page {
-            max-width: 800px;
+        .terms-content {
+            max-width: 900px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 60px 20px 100px;
+            line-height: 1.8;
         }
-        .legal-page h1 {
+
+        .terms-content h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: var(--text-dark);
         }
-        .legal-page .last-updated {
+
+        .terms-dates {
             color: var(--text-light);
             margin-bottom: 2rem;
-            font-style: italic;
+            font-size: 0.95rem;
         }
-        .legal-page h2 {
+
+        .terms-content h2 {
             font-size: 1.75rem;
-            margin-top: 2.5rem;
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-dark);
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 0.5rem;
+        }
+
+        .terms-content h3 {
+            font-size: 1.35rem;
+            margin-top: 2rem;
             margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .terms-content p {
+            margin-bottom: 1.25rem;
             color: var(--text-dark);
         }
-        .legal-page h3 {
-            font-size: 1.25rem;
-            margin-top: 1.5rem;
+
+        .terms-content ul, .terms-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .terms-content li {
             margin-bottom: 0.75rem;
             color: var(--text-dark);
         }
-        .legal-page p {
-            margin-bottom: 1rem;
-            line-height: 1.8;
+
+        .terms-content strong {
             color: var(--text-dark);
+            font-weight: 600;
         }
-        .legal-page ul {
-            margin-left: 2rem;
+
+        .terms-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .terms-content a:hover {
+            text-decoration: underline;
+        }
+
+        .terms-summary {
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .terms-summary p {
+            margin-bottom: 0;
+        }
+
+        .terms-content hr {
+            border: none;
+            border-top: 1px solid var(--bg-light);
+            margin: 2.5rem 0;
+        }
+
+        .terms-highlight {
+            background-color: #FFF3E0;
+            border-left: 4px solid #FF9800;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .community-guidelines {
+            background-color: var(--bg-light);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            border-radius: 12px;
+        }
+
+        .community-guidelines h1 {
+            font-size: 2.25rem;
             margin-bottom: 1rem;
         }
-        .legal-page li {
-            margin-bottom: 0.5rem;
-            line-height: 1.8;
+
+        .guidelines-values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .value-box {
+            background-color: var(--bg-white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .value-box strong {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .terms-content h1 {
+                font-size: 2rem;
+            }
+
+            .terms-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .terms-content h3 {
+                font-size: 1.2rem;
+            }
+
+            .community-guidelines {
+                padding: 2rem 1.5rem;
+            }
+
+            .guidelines-values {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -55,8 +157,6 @@
         <nav class="container">
             <a href="index.html" class="logo">Movemates</a>
             <ul class="nav-links">
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#premium">Premium</a></li>
                 <li><a href="safety.html">Safety</a></li>
                 <li><a href="index.html#download">Download</a></li>
             </ul>
@@ -64,157 +164,341 @@
     </header>
 
     <!-- Terms of Service Content -->
-    <main class="legal-page">
-        <h1>Terms of Service</h1>
-        <p class="last-updated">Last Updated: January 2025</p>
+    <div class="terms-content">
+        <h1>Movemates — Terms of Service</h1>
 
-        <p>Welcome to Movemates! These Terms of Service ("Terms") govern your use of the Movemates mobile application and services. By creating an account or using Movemates, you agree to these Terms.</p>
-
-        <h2>1. Acceptance of Terms</h2>
-        <p>By accessing or using Movemates, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you may not use our services.</p>
-
-        <h2>2. Eligibility</h2>
-        <p>You must be at least 18 years old to use Movemates. By creating an account, you represent and warrant that:</p>
-        <ul>
-            <li>You are at least 18 years of age</li>
-            <li>You have the legal capacity to enter into these Terms</li>
-            <li>You will comply with these Terms and all applicable laws</li>
-            <li>You have not been previously banned from Movemates</li>
-        </ul>
-
-        <h2>3. Account Registration</h2>
-        <p>To use Movemates, you must create an account. You agree to:</p>
-        <ul>
-            <li>Provide accurate, current, and complete information</li>
-            <li>Maintain and update your information to keep it accurate</li>
-            <li>Keep your login credentials secure and confidential</li>
-            <li>Notify us immediately of any unauthorized use of your account</li>
-            <li>Be responsible for all activities under your account</li>
-        </ul>
-
-        <h2>4. User Conduct</h2>
-
-        <h3>4.1 Acceptable Use</h3>
-        <p>You agree to use Movemates only for lawful purposes and in accordance with these Terms. You agree NOT to:</p>
-        <ul>
-            <li>Harass, bully, stalk, intimidate, assault, or threaten any person</li>
-            <li>Post false, misleading, or fraudulent content</li>
-            <li>Impersonate any person or entity</li>
-            <li>Use the service for commercial purposes without our permission</li>
-            <li>Upload viruses, malware, or harmful code</li>
-            <li>Scrape, data mine, or use automated systems to access the service</li>
-            <li>Interfere with or disrupt the service or servers</li>
-            <li>Violate any applicable laws or regulations</li>
-        </ul>
-
-        <h3>4.2 Content Guidelines</h3>
-        <p>You are responsible for the content you post, including profile information, photos, messages, and move descriptions. Content must not contain:</p>
-        <ul>
-            <li>Nudity, sexual content, or sexually explicit material</li>
-            <li>Hate speech, discrimination, or promotion of violence</li>
-            <li>Illegal activities or dangerous behavior</li>
-            <li>Spam, advertising, or promotional material (unless authorized)</li>
-            <li>Copyright or trademark violations</li>
-            <li>Personal information of others without consent</li>
-        </ul>
-
-        <h2>5. Safety and Meetings</h2>
-        <p><strong>IMPORTANT:</strong> Movemates facilitates connections between runners, but we are not responsible for interactions that occur outside the app. When meeting other users:</p>
-        <ul>
-            <li>Always meet in public places</li>
-            <li>Tell a friend or family member about your plans</li>
-            <li>Trust your instincts - if something feels wrong, don't proceed</li>
-            <li>Follow local laws and guidelines for group gatherings</li>
-            <li>Run at your own pace and ability level</li>
-        </ul>
-        <p>You acknowledge that running and physical activity carry inherent risks. Movemates is not liable for any injuries, accidents, or harm that may occur.</p>
-
-        <h2>6. Movemates Premium</h2>
-
-        <h3>6.1 Subscription</h3>
-        <p>Movemates Premium is a paid subscription service offering enhanced features. Subscriptions are processed through the Apple App Store and are subject to Apple's terms and conditions.</p>
-
-        <h3>6.2 Billing and Cancellation</h3>
-        <ul>
-            <li>Subscriptions automatically renew unless cancelled</li>
-            <li>You can cancel at any time through your App Store account settings</li>
-            <li>Cancellations take effect at the end of the current billing period</li>
-            <li>No refunds for partial subscription periods</li>
-        </ul>
-
-        <h3>6.3 Changes to Premium</h3>
-        <p>We reserve the right to modify Premium features, benefits, and pricing with reasonable notice.</p>
-
-        <h2>7. Intellectual Property</h2>
-        <p>The Movemates app, including all content, features, and functionality, is owned by Movemates and protected by copyright, trademark, and other intellectual property laws.</p>
-
-        <h3>7.1 Your Content</h3>
-        <p>You retain ownership of content you post. By posting content, you grant Movemates a worldwide, non-exclusive, royalty-free license to use, display, reproduce, and distribute your content in connection with operating the service.</p>
-
-        <h2>8. Termination</h2>
-        <p>We may suspend or terminate your account at any time for:</p>
-        <ul>
-            <li>Violation of these Terms</li>
-            <li>Fraudulent, abusive, or illegal activity</li>
-            <li>Conduct that harms other users or Movemates</li>
-            <li>Any reason at our sole discretion</li>
-        </ul>
-        <p>You may delete your account at any time through the app settings.</p>
-
-        <h2>9. Disclaimers</h2>
-        <p>MOVEMATES IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. WE DO NOT WARRANT THAT:</p>
-        <ul>
-            <li>The service will be uninterrupted, secure, or error-free</li>
-            <li>The service will meet your requirements</li>
-            <li>Any information obtained through the service will be accurate or reliable</li>
-            <li>Defects will be corrected</li>
-        </ul>
-
-        <h2>10. Limitation of Liability</h2>
-        <p>TO THE FULLEST EXTENT PERMITTED BY LAW, MOVEMATES SHALL NOT BE LIABLE FOR:</p>
-        <ul>
-            <li>Any indirect, incidental, special, or consequential damages</li>
-            <li>Loss of profits, data, or goodwill</li>
-            <li>Service interruptions or security breaches</li>
-            <li>Conduct of other users or third parties</li>
-            <li>Injuries or harm occurring during in-person meetings</li>
-        </ul>
-        <p>Our total liability shall not exceed the amount you paid to Movemates in the past 12 months, or $100, whichever is greater.</p>
-
-        <h2>11. Indemnification</h2>
-        <p>You agree to indemnify and hold harmless Movemates from any claims, damages, losses, liabilities, and expenses arising from:</p>
-        <ul>
-            <li>Your use of the service</li>
-            <li>Your violation of these Terms</li>
-            <li>Your violation of any rights of another person or entity</li>
-            <li>Your content or conduct on the platform</li>
-        </ul>
-
-        <h2>12. Dispute Resolution</h2>
-        <p>Any disputes arising from these Terms or your use of Movemates shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, rather than in court.</p>
-
-        <h2>13. Governing Law</h2>
-        <p>These Terms are governed by the laws of the State of [Your State], without regard to conflict of law principles.</p>
-
-        <h2>14. Changes to Terms</h2>
-        <p>We may modify these Terms at any time. We will notify you of material changes by posting the updated Terms in the app and updating the "Last Updated" date. Continued use of Movemates after changes constitutes acceptance of the modified Terms.</p>
-
-        <h2>15. Contact Information</h2>
-        <p>If you have questions about these Terms, please contact us at:</p>
-        <p><strong>Email:</strong> legal@movemates.app</p>
-
-        <h2>16. Miscellaneous</h2>
-        <ul>
-            <li><strong>Entire Agreement:</strong> These Terms constitute the entire agreement between you and Movemates</li>
-            <li><strong>Severability:</strong> If any provision is found unenforceable, the remaining provisions remain in effect</li>
-            <li><strong>No Waiver:</strong> Failure to enforce any provision does not constitute a waiver</li>
-            <li><strong>Assignment:</strong> You may not assign these Terms; we may assign them to any successor or affiliate</li>
-        </ul>
-
-        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #E8E8EA;">
-            <p style="text-align: center;"><a href="index.html" style="color: var(--primary-color); text-decoration: none;">← Back to Home</a></p>
+        <div class="terms-dates">
+            <strong>Effective Date:</strong> October 16, 2025<br>
+            <strong>Last Updated:</strong> October 16, 2025
         </div>
-    </main>
+
+        <p>These Terms of Service ("Terms") form a binding agreement between <strong>Brink 13 Labs, LLC</strong> ("Brink 13 Labs," "we," "us," or "our") and the person or entity agreeing to these Terms ("you"). By accessing or using the Movemates iOS application and Services (defined below), you agree to these Terms. If you do not agree, do not use the Services.</p>
+
+        <div class="terms-summary">
+            <p><strong>Summary (not a substitute for the full Terms):</strong> Movemates connects adult runners to plan group runs and chat. You must be 18+. Be respectful, follow the Community Guidelines, and use common‑sense safety practices. We don't conduct background checks, and in‑person meetings and physical activity involve risk that you accept. Subscriptions are billed via Apple and auto‑renew unless canceled in iOS Settings. Disputes are resolved by binding arbitration on an individual basis, with a 30‑day email opt‑out.</p>
+        </div>
+
+        <hr>
+
+        <h2>1) Definitions</h2>
+        <ul>
+            <li><strong>App/Services:</strong> the Movemates iOS application, websites (if any), and features such as discovery, profiles, matching, Moves (events), messaging, notifications, and Premium.</li>
+            <li><strong>User Content:</strong> any content you provide or make available through the Services, including profile information, photos, messages, Move details, and feedback.</li>
+            <li><strong>Premium:</strong> Movemates subscription features available via Apple In‑App Purchase.</li>
+        </ul>
+
+        <h2>2) Eligibility &amp; Accounts</h2>
+        <ul>
+            <li><strong>Age:</strong> You must be 18 or older and capable of forming a binding contract.</li>
+            <li><strong>Account Security:</strong> Keep your credentials confidential and your device secure. You are responsible for all activity on your account. Notify us of suspected unauthorized use.</li>
+            <li><strong>Accurate Information:</strong> Provide accurate, current information and keep it updated.</li>
+            <li><strong>One Person, One Account:</strong> Do not create accounts for others without permission or maintain duplicate accounts except as expressly permitted.</li>
+        </ul>
+
+        <h2>3) Safety; No Background Checks; Assumption of Risk</h2>
+        <ul>
+            <li>Movemates facilitates introductions and event organization but cannot control how users behave. We do not conduct criminal background checks or identity verification on users.</li>
+            <li>You are solely responsible for your interactions with others. When meeting, use caution and follow in‑App safety tips (e.g., meet in public places, inform someone, run in daylight, bring ID/phone, trust your instincts).</li>
+            <li><strong>Health Risks:</strong> Running and related activities carry inherent risks (e.g., injury, illness). Consult a physician before starting a new exercise program. You assume all risks associated with your participation in activities arranged through the Services.</li>
+            <li><strong>Emergency Services:</strong> We do not provide emergency response. Call 911 in an emergency.</li>
+        </ul>
+
+        <h2>4) Community Guidelines &amp; Prohibited Conduct</h2>
+        <p>You agree to follow our <strong>Community Guidelines</strong> (see full version below), which include but are not limited to:</p>
+        <ul>
+            <li><strong>Be authentic:</strong> Use your real name and photos; no impersonation or fake profiles.</li>
+            <li><strong>Be respectful:</strong> No harassment, bullying, threats, hate speech, discrimination, sexual harassment, or doxxing.</li>
+            <li><strong>Keep it appropriate:</strong> No sexual content, nudity, violence, or dangerous activities.</li>
+            <li><strong>No fraud or spam:</strong> No scams, commercial solicitation, multi‑level marketing, or mass messaging.</li>
+            <li><strong>Use for running only:</strong> Organize and discuss legitimate running/fitness meetups; no dates or social-only hangouts.</li>
+            <li><strong>Respect others' boundaries:</strong> No circumventing blocks or sending unwanted messages.</li>
+            <li><strong>Platform integrity:</strong> Do not scrape, reverse engineer, use bots, or interfere with security features.</li>
+        </ul>
+        <p>We may remove content, restrict features, or suspend/terminate accounts that violate these Terms or Community Guidelines. See the <strong>full Community Guidelines below</strong> for detailed expectations, safety tips, and enforcement procedures.</p>
+
+        <h2>5) User Content &amp; Licenses</h2>
+        <ul>
+            <li><strong>Your Ownership:</strong> You retain ownership of your User Content.</li>
+            <li><strong>License to Us:</strong> You grant Brink 13 Labs a non‑exclusive, worldwide, royalty‑free, transferable, and sublicensable license to host, store, reproduce, modify (for formatting), adapt, translate, publish, publicly display and perform, and distribute your User Content solely to operate, provide, secure, and improve the Services, including to enable discovery, messaging, moderation, and backups.</li>
+            <li><strong>Promotional Use:</strong> We will not use your photos or personal profile details for public marketing outside the App without your separate consent.</li>
+            <li><strong>Feedback:</strong> If you submit ideas or suggestions, you grant us a perpetual, irrevocable, royalty‑free license to use them without restriction or compensation.</li>
+            <li><strong>Representation &amp; Warranty:</strong> You represent that you have all rights to submit the User Content and that it does not violate any law or rights of others.</li>
+        </ul>
+
+        <h2>6) Intellectual Property; App License</h2>
+        <ul>
+            <li><strong>Our IP:</strong> The Services, including software, design, and trademarks (e.g., MOVEMATES), are owned by Brink 13 Labs or our licensors and protected by law.</li>
+            <li><strong>License to You:</strong> Subject to these Terms, we grant you a limited, personal, non‑transferable, non‑sublicensable, revocable license to install and use the App on iOS devices you control for your personal, noncommercial use.</li>
+            <li><strong>Open Source:</strong> Some components may be provided under open‑source licenses; those terms govern the components.</li>
+        </ul>
+
+        <h2>7) Subscriptions; Billing; Free Trials</h2>
+        <ul>
+            <li><strong>In‑App Purchase:</strong> Premium is offered as an auto‑renewable subscription processed by Apple via your Apple ID. Apple's terms and privacy policies apply.</li>
+            <li><strong>Management &amp; Cancellation:</strong> Manage or cancel in <strong>Settings &gt; [your name] &gt; Subscriptions</strong> (or in the App Store). Cancellations take effect at the end of the current period.</li>
+            <li><strong>Billing &amp; Refunds:</strong> Charges (including taxes) are billed by Apple. We do not issue refunds for partial periods; any refund requests must be directed to Apple.</li>
+            <li><strong>Entitlements:</strong> Premium unlocks features such as Travel Discovery Mode, unlimited Moves/participants, Premium badge, unlimited chat history, and expanded photo gallery (subject to App limits). Features may change as we improve the Services.</li>
+            <li><strong>Price Changes:</strong> If Apple or we change pricing, Apple may notify you; continued subscription after the change constitutes consent.</li>
+            <li><strong>Promotions/Trials:</strong> Promotional periods or codes may be offered and are subject to their terms; misuse may result in revocation.</li>
+        </ul>
+
+        <h2>8) Messaging &amp; Retention</h2>
+        <ul>
+            <li><strong>Free users:</strong> chat history visible for 30 days; older messages are hidden but remain stored.</li>
+            <li><strong>Premium users:</strong> unlimited chat history visibility (subject to technical/storage constraints). If you downgrade, messages older than 30 days will no longer be accessible to you but remain stored in our systems.</li>
+        </ul>
+
+        <h2>9) Modifications to Services</h2>
+        <p>We may add, change, or remove features; suspend or discontinue the Services in whole or part; or impose limits, with or without notice, to the extent permitted by law and platform rules. If we discontinue Premium, Apple's policies govern any refunds.</p>
+
+        <h2>10) Third‑Party Services</h2>
+        <p>Certain features depend on third parties (e.g., Firebase; Apple; optional Strava links). We are not responsible for third‑party services, terms, or policies.</p>
+
+        <h2>11) Apple App Store Terms; Third‑Party Beneficiary</h2>
+        <p>You acknowledge that these Terms are between you and Brink 13 Labs, not Apple. Apple is not responsible for the App or its content and has no obligation to furnish maintenance or support. To the maximum extent permitted by law, Apple has no warranty obligations with respect to the App. Apple and its subsidiaries are third‑party beneficiaries of these Terms and may enforce them against you as a third‑party beneficiary.</p>
+
+        <h2>12) Disclaimers</h2>
+        <p><strong>THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE."</strong> TO THE FULLEST EXTENT PERMITTED BY LAW, <strong>WE DISCLAIM ALL WARRANTIES</strong>, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON‑INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, SECURE, OR ERROR‑FREE.</p>
+
+        <h2>13) Limitation of Liability</h2>
+        <p>TO THE FULLEST EXTENT PERMITTED BY LAW: (A) WE WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICES; AND (B) OUR TOTAL LIABILITY FOR ANY CLAIMS RELATING TO THE SERVICES WILL NOT EXCEED THE GREATER OF (i) AMOUNTS YOU PAID US (IF ANY) FOR PREMIUM IN THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM, OR (ii) $100. SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS; THOSE LIMITATIONS MAY NOT APPLY TO YOU.</p>
+
+        <h2>14) Indemnification</h2>
+        <p>You agree to defend, indemnify, and hold harmless Brink 13 Labs and our officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) your User Content; (b) your conduct, including in‑person meetings or activities arranged through the Services; (c) your violation of these Terms or applicable law; or (d) your infringement or misappropriation of any rights of a third party.</p>
+
+        <h2>15) DMCA &amp; IP Complaints</h2>
+        <p>If you believe content infringes your copyright, please send a DMCA notice to: <strong><a href="mailto:contact@movemates.app">contact@movemates.app</a></strong> with the subject line "DMCA Notice," including: (1) your physical or electronic signature; (2) identification of the copyrighted work; (3) identification of the infringing material and its location; (4) your contact information; (5) a statement of good‑faith belief; and (6) a statement under penalty of perjury that you are authorized to act. We may remove content and terminate repeat infringers in appropriate circumstances. (If you submit a counter‑notice, include the information required by 17 U.S.C. § 512.)</p>
+
+        <h2>16) Privacy</h2>
+        <p>Our Privacy Policy explains how we collect and use your information. By using the Services, you consent to our data practices as described in that Policy.</p>
+
+        <p><strong>Data Access &amp; Portability Requests (Email Only).</strong> We process requests to access or receive a copy of your personal information <strong>manually via email</strong>. To submit a request, email <strong><a href="mailto:support@movemates.app">support@movemates.app</a></strong> from the email associated with your account with the subject line <strong>"Data Request."</strong> Include your full name and the account email (including any Sign in with Apple relay address). We may request additional information to verify your identity before fulfilling the request. <strong>We do not currently offer an automated in-app export or download.</strong> We will respond within time periods required by applicable law.</p>
+
+        <h2>17) Dispute Resolution; Arbitration; Class Action Waiver</h2>
+        <ul>
+            <li><strong>Informal Process First:</strong> Before filing a claim, you agree to email us at <strong><a href="mailto:contact@movemates.app">contact@movemates.app</a></strong> with "Dispute" in the subject and a description of your claim, and to try to resolve it informally for 30 days.</li>
+            <li><strong>Binding Arbitration:</strong> Except for small claims court or claims for injunctive relief for IP or security misuse, any dispute arising out of or relating to these Terms or the Services will be resolved by binding arbitration administered by the American Arbitration Association (AAA) under its Consumer Arbitration Rules.</li>
+            <li><strong>Venue &amp; Law:</strong> Arbitration will take place by video/telephone or in Davidson County, Tennessee, at your election. The Federal Arbitration Act and Tennessee law govern this section.</li>
+            <li><strong>Class‑Action &amp; Jury Waiver:</strong> You and we agree to bring claims only on an individual basis, not as a plaintiff or class member in any purported class, collective, consolidated, or representative action. You and we waive the right to a jury trial.</li>
+            <li><strong>Arbitration Costs:</strong> AAA rules will govern fees; we will pay required consumer filing/admin fees where mandated.</li>
+            <li><strong>Severability:</strong> If any part of this Section is found unenforceable, the remainder will still apply, except that the class‑action waiver may not be severed as to a claim.</li>
+            <li><strong>30‑Day Opt‑Out:</strong> You may opt out of arbitration by emailing <strong><a href="mailto:contact@movemates.app">contact@movemates.app</a></strong> within 30 days of first accepting these Terms, stating your name, the email tied to your account, and that you opt out of arbitration. Opting out does not affect other provisions.</li>
+        </ul>
+
+        <h2>18) Termination</h2>
+        <p>You may stop using the Services at any time. We may suspend or terminate your access (with or without notice) if we believe you violated these Terms, pose a risk, or as required by law. Upon termination, your license ends and certain provisions survive (e.g., Sections 5, 12–19).</p>
+
+        <h2>19) Governing Law &amp; Jurisdiction</h2>
+        <p>These Terms are governed by the laws of the State of Tennessee, without regard to conflict‑of‑laws principles, and the Federal Arbitration Act as stated above. Subject to the arbitration provision, the exclusive venue for permissible court proceedings (e.g., small claims) is state or federal courts located in <strong>Davidson County, Tennessee</strong>, and you consent to personal jurisdiction there.</p>
+
+        <h2>20) Force Majeure</h2>
+        <p>We are not liable for any delay or failure to perform due to events beyond our reasonable control, including acts of God, natural disasters, war, terrorism, riots, labor conditions, governmental action, power or internet failures.</p>
+
+        <h2>21) Export; Sanctions</h2>
+        <p>You represent that you are not located in a country embargoed by the U.S. or on any U.S. government list of prohibited or restricted parties. You agree to comply with U.S. export and sanctions laws.</p>
+
+        <h2>22) General</h2>
+        <ul>
+            <li><strong>Entire Agreement:</strong> These Terms, the Privacy Policy, and any supplemental terms or policies referenced herein are the entire agreement between you and us.</li>
+            <li><strong>Severability:</strong> If any provision is unlawful or unenforceable, the remaining provisions remain in effect.</li>
+            <li><strong>Assignment:</strong> You may not assign these Terms; we may assign them in connection with a merger, acquisition, or asset sale.</li>
+            <li><strong>No Waiver:</strong> Our failure to enforce a provision is not a waiver.</li>
+            <li><strong>Headings:</strong> For convenience only.</li>
+            <li><strong>Notices:</strong> We may provide notices via the App, email, or other reasonable means. Data rights requests sent via in-app chat, report/block tools, or social media are not considered received; please use the email method described in Sections 16 and 23.</li>
+        </ul>
+
+        <h2>23) Contact</h2>
+        <p>
+            <strong>Brink 13 Labs, LLC</strong><br>
+            <strong>Email:</strong> <a href="mailto:contact@movemates.app">contact@movemates.app</a><br>
+            <strong>Data Rights Requests:</strong> <a href="mailto:support@movemates.app">support@movemates.app</a>
+        </p>
+
+        <hr>
+
+        <!-- Community Guidelines Section -->
+        <div class="community-guidelines">
+            <h1>Movemates Community Guidelines</h1>
+
+            <div class="terms-dates">
+                <strong>Last Updated:</strong> October 16, 2025
+            </div>
+
+            <p>Movemates connects runners for group activities and friendships. These guidelines help keep our community safe, welcoming, and focused on running. By using Movemates, you agree to follow these rules.</p>
+
+            <hr>
+
+            <div class="guidelines-values">
+                <div class="value-box">
+                    <p><strong>Safe.</strong> We prioritize your physical safety and well-being during in-person meetups.</p>
+                </div>
+                <div class="value-box">
+                    <p><strong>Respectful.</strong> We treat everyone with kindness, regardless of pace, experience, gender, race, or background.</p>
+                </div>
+                <div class="value-box">
+                    <p><strong>Authentic.</strong> We use real photos, honest profiles, and show up as ourselves.</p>
+                </div>
+                <div class="value-box">
+                    <p><strong>Active.</strong> We organize and participate in legitimate running and fitness activities.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>What We Expect</h2>
+
+            <h3>Profile &amp; Account Behavior</h3>
+            <ul>
+                <li><strong>Be yourself.</strong> Use your real name and recent, recognizable photos of yourself.</li>
+                <li><strong>Accurate info.</strong> Provide truthful information about your running pace, experience level, and preferences.</li>
+                <li><strong>Appropriate photos.</strong> Profile photos should clearly show your face. No sunglasses-only photos, group photos where you can't be identified, or photos that don't show you.</li>
+                <li><strong>One account per person.</strong> Do not create multiple accounts or impersonate others.</li>
+                <li><strong>Age requirement.</strong> You must be 18 or older to use Movemates.</li>
+            </ul>
+
+            <h3>Creating &amp; Participating in Moves</h3>
+            <ul>
+                <li><strong>Legitimate activities only.</strong> Moves must be for running, walking, or fitness-related activities. No dates, social-only hangouts, or commercial events disguised as group runs.</li>
+                <li><strong>Show up or communicate.</strong> If you RSVP to a Move, make a good-faith effort to attend. If plans change, update your RSVP or message the organizer.</li>
+                <li><strong>Respect organizers.</strong> The Move organizer sets the pace, distance, and route. If it's not a good fit, find a different Move.</li>
+                <li><strong>Safety first.</strong> Follow our Safety Tips when attending Moves, especially with people you haven't met before.</li>
+            </ul>
+
+            <h3>Messaging &amp; Communication</h3>
+            <ul>
+                <li><strong>Stay on topic.</strong> Use messaging for coordinating runs, discussing routes, and getting to know running partners—not for harassment, solicitation, or off-topic spam.</li>
+                <li><strong>Respect boundaries.</strong> If someone doesn't respond or asks you to stop messaging them, respect that.</li>
+                <li><strong>No unsolicited content.</strong> Don't send unwanted photos, promotional content, or inappropriate messages.</li>
+            </ul>
+
+            <hr>
+
+            <h2>What's Not Allowed</h2>
+
+            <h3>Harassment &amp; Safety Violations</h3>
+            <ul>
+                <li><strong>No harassment or bullying.</strong> This includes persistent unwanted contact, insults, threats, intimidation, or stalking (online or in person).</li>
+                <li><strong>No hate speech or discrimination.</strong> Attacks based on race, ethnicity, national origin, religion, gender, gender identity, sexual orientation, disability, age, or other protected characteristics are prohibited.</li>
+                <li><strong>No sexual harassment.</strong> Unwanted sexual advances, inappropriate comments about appearance or body, sexual messages, or requesting dates/hookups is not allowed.</li>
+                <li><strong>No doxxing.</strong> Don't share others' personal information (phone numbers, addresses, workplace, etc.) without their explicit permission.</li>
+            </ul>
+
+            <h3>Inappropriate Content</h3>
+            <ul>
+                <li><strong>No sexual or adult content.</strong> This includes nudity, sexually explicit photos or messages, or sexually suggestive content.</li>
+                <li><strong>No violence or gore.</strong> Don't share images or content depicting violence, self-harm, or graphic injury.</li>
+                <li><strong>No dangerous activities.</strong> Don't organize or promote activities that pose unreasonable safety risks.</li>
+            </ul>
+
+            <h3>Fraud &amp; Misuse</h3>
+            <ul>
+                <li><strong>No scams or fraud.</strong> Don't solicit money, sell products/services, promote pyramid schemes or MLMs, or misrepresent yourself for financial gain.</li>
+                <li><strong>No spam.</strong> Don't send repetitive messages, mass-message users, or use Movemates for commercial advertising.</li>
+                <li><strong>No impersonation.</strong> Don't pretend to be someone else or create fake profiles.</li>
+                <li><strong>No circumventing blocks.</strong> If someone blocks you, respect it. Don't create new accounts to contact them.</li>
+            </ul>
+
+            <h3>Platform Integrity</h3>
+            <ul>
+                <li><strong>No hacking or scraping.</strong> Don't attempt to access others' accounts, scrape user data, reverse-engineer the app, or interfere with our security measures.</li>
+                <li><strong>No automated accounts.</strong> Don't use bots, scripts, or automation to create accounts or interact with users.</li>
+                <li><strong>No abuse of features.</strong> Don't exploit bugs, create fake Moves, spam RSVPs, or misuse Premium features.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Safety Guidelines for In-Person Meetups</h2>
+            <p>We <strong>do not conduct background checks</strong>. Meeting people from the app involves risk that you accept. Follow these safety practices:</p>
+            <ul>
+                <li><strong>Meet in public places</strong> with other people around (parks, popular running trails, public track).</li>
+                <li><strong>Tell someone</strong> where you're going, who you're meeting, and when you'll be back.</li>
+                <li><strong>Share your location</strong> with a trusted friend or family member during the meetup.</li>
+                <li><strong>Run during daylight</strong> whenever possible, especially for first meetups.</li>
+                <li><strong>Bring your phone</strong> (charged) and ID with emergency contact info.</li>
+                <li><strong>Trust your instincts.</strong> If something feels off, leave. Your safety comes first.</li>
+                <li><strong>Start with group Moves.</strong> Meet new people in groups before one-on-one runs.</li>
+                <li><strong>Stay aware.</strong> Don't wear both earbuds; keep one ear open to surroundings.</li>
+            </ul>
+            <p><strong>In an emergency:</strong> Call 911. Movemates does not provide emergency response.</p>
+
+            <hr>
+
+            <h2>Reporting &amp; Enforcement</h2>
+
+            <h3>If You Experience a Violation</h3>
+            <p><strong>Block the user:</strong> Tap their profile → "Block User." This will:</p>
+            <ul>
+                <li>Hide your profile from them</li>
+                <li>Remove you both from shared Moves</li>
+                <li>Prevent future messaging</li>
+            </ul>
+
+            <p><strong>Report serious violations:</strong> Email <strong><a href="mailto:contact@movemates.app">contact@movemates.app</a></strong> with:</p>
+            <ul>
+                <li>The user's name and profile</li>
+                <li>Screenshots of the violation (if applicable)</li>
+                <li>Description of what happened</li>
+                <li>Whether the violation occurred in-app or during an in-person meetup</li>
+            </ul>
+            <p>We take reports seriously and will investigate promptly.</p>
+
+            <h3>What We May Do</h3>
+            <p>Depending on the severity and context, we may:</p>
+            <ul>
+                <li>Issue a warning</li>
+                <li>Temporarily restrict features (messaging, Move creation)</li>
+                <li>Suspend your account</li>
+                <li>Permanently terminate your account</li>
+                <li>Report illegal activity to law enforcement</li>
+            </ul>
+            <p>Serious violations (threats, sexual harassment, hate speech, fraud, safety violations) may result in immediate account termination without warning.</p>
+
+            <h3>We Reserve the Right To</h3>
+            <ul>
+                <li>Remove content or profiles that violate these guidelines</li>
+                <li>Suspend or terminate accounts at our discretion</li>
+                <li>Cooperate with law enforcement investigations</li>
+                <li>Update these guidelines at any time</li>
+            </ul>
+
+            <hr>
+
+            <h2>Best Practices for a Great Experience</h2>
+
+            <h3>For Everyone:</h3>
+            <ul>
+                <li>Use clear, well-lit profile photos</li>
+                <li>Write a friendly bio that reflects your running style and goals</li>
+                <li>Be responsive when you message or RSVP to Moves</li>
+                <li>Communicate clearly about pace, distance, and route preferences</li>
+                <li>Respect that people have different fitness levels and goals</li>
+            </ul>
+
+            <h3>For Move Organizers:</h3>
+            <ul>
+                <li>Set clear expectations (pace, distance, route, meeting point)</li>
+                <li>Confirm the Move 24 hours before and remind participants</li>
+                <li>Arrive on time and look for participants</li>
+                <li>Have a backup plan for weather or low turnout</li>
+                <li>Consider creating a group chat for your Move</li>
+            </ul>
+
+            <h3>For Move Participants:</h3>
+            <ul>
+                <li>RSVP honestly—only commit if you can attend</li>
+                <li>Arrive on time or let the organizer know if you're delayed</li>
+                <li>Respect the planned pace and route</li>
+                <li>Introduce yourself and be friendly</li>
+                <li>Leave the location clean (trash, water bottles, etc.)</li>
+            </ul>
+
+            <hr>
+
+            <h2>Questions?</h2>
+            <p>If you're unsure whether something violates these guidelines, err on the side of caution or email us at <strong><a href="mailto:contact@movemates.app">contact@movemates.app</a></strong>.</p>
+            <p><strong>Remember:</strong> Movemates is for building running friendships and staying active. Keep it positive, safe, and focused on running.</p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -222,7 +506,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Movemates</h4>
-                    <p>Find your running crew</p>
+                    <p>Move Together</p>
                 </div>
                 <div class="footer-section">
                     <h4>Connect</h4>
