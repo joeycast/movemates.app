@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/strava/session",
+        "function": "createStravaAuthSession"
+      },
+      {
+        "source": "/api/strava/disconnect",
+        "function": "disconnectStrava"
+      },
+      {
+        "source": "/api/strava/callback",
+        "function": "stravaOAuthCallback"
+      },
+      {
+        "source": "/api/strava/webhook",
+        "function": "stravaWebhook"
+      }
+    ]
+  }
+}
