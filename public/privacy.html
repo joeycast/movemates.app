@@ -166,7 +166,7 @@
 
         <div class="privacy-dates">
             <strong>Effective Date:</strong> October 17, 2025<br>
-            <strong>Last Updated:</strong> October 17, 2025
+            <strong>Last Updated:</strong> February 16, 2026
         </div>
 
         <p>This Privacy Policy explains how <strong>Brink 13 Labs, LLC</strong> ("<strong>Brink 13 Labs</strong>," "<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"), a Tennessee limited liability company, collects, uses, discloses, and protects information about you when you use the Movemates iOS application (the "<strong>App</strong>") and related services (collectively, the "<strong>Services</strong>"). Movemates helps runners find partners and organize group runs ("<strong>Moves</strong>").</p>
@@ -174,7 +174,7 @@
         <p>Movemates is offered in the United States via the Apple App Store. You must be <strong>18 years or older</strong> to use the Services.</p>
 
         <div class="privacy-summary">
-            <p><strong>Quick summary (not a substitute for the full policy):</strong> We collect the information you provide (e.g., name, age, gender, location, runner profile, photos, and Move details); and technical data (e.g., device and usage data, crash logs, and push tokens). We use this to operate the App, match runners, host profiles and chat, send notifications, and keep the platform safe. We use Firebase to host data in the U.S. We do <strong>not</strong> sell or "share" your personal information for cross-context behavioral advertising. You can access, correct, or delete your data. Promotional emails can be opted out at any time. Questions? <strong><a href="mailto:contact@movemates.app">contact@movemates.app</a></strong>.</p>
+            <p><strong>Quick summary (not a substitute for the full policy):</strong> We collect the information you provide (e.g., name, age, gender, location, runner profile, photos, and Move details); and technical data (e.g., device and usage data, crash logs, and push tokens). We use this to operate the App, match runners, host profiles and chat, send notifications, and keep the platform safe. We use Firebase to host data in the U.S. and RevenueCat to manage App Store subscription status and entitlements. We do <strong>not</strong> sell or "share" your personal information for cross-context behavioral advertising. You can access, correct, or delete your data. Promotional emails can be opted out at any time. Questions? <strong><a href="mailto:contact@movemates.app">contact@movemates.app</a></strong>.</p>
         </div>
 
         <hr>
@@ -194,7 +194,7 @@
             <li><strong>Discovery &amp; Preferences:</strong> city and state, plus latitude/longitude representing the <strong>city centroid</strong> (not precise GPS); search filters; gender visibility preferences; profile visibility.</li>
             <li><strong>Moves:</strong> event title, activity type (run/walk/run-walk), distance, date/time, location addresses and map coordinates, notes, RSVPs/attendance.</li>
             <li><strong>Messaging:</strong> direct messages and group chats for Moves (see retention below).</li>
-            <li><strong>Premium Status:</strong> subscription tier, expiration date, auto-renew status, source (App Store/promo/admin).</li>
+            <li><strong>Premium Status:</strong> subscription tier, entitlement status, expiration date, auto-renew status, source (App Store/promo/admin), subscription product identifiers, and purchase environment/status metadata used to determine access.</li>
         </ul>
 
         <h3>B. Information Collected Automatically</h3>
@@ -216,7 +216,7 @@
         <ul>
             <li>You (through in-App forms and settings).</li>
             <li>Your device (through the App).</li>
-            <li>Apple (subscription validation).</li>
+            <li>Apple and RevenueCat (subscription processing, validation, and entitlement state).</li>
             <li>Firebase services (analytics, crash logs, security signals).</li>
             <li>Optional: links you post (e.g., Strava URL).</li>
         </ul>
@@ -239,7 +239,7 @@
         <h2>5) How We Share Information</h2>
         <p>We may disclose information to:</p>
         <ul>
-            <li><strong>Service Providers/Processors:</strong> Firebase (Authentication, Firestore, Storage, Cloud Messaging, App Check) and Google Cloud hosting; analytics/diagnostics; email/push providers; content moderation vendors; customer support tools. These parties process data under instructions and appropriate safeguards.</li>
+            <li><strong>Service Providers/Processors:</strong> Firebase (Authentication, Firestore, Storage, Cloud Messaging, App Check) and Google Cloud hosting; RevenueCat (subscription infrastructure, receipt processing, and entitlement management); analytics/diagnostics; email/push providers; content moderation vendors; customer support tools. These parties process data under instructions and appropriate safeguards.</li>
             <li><strong>Apple:</strong> for subscription validation and billing; Apple processes payments subject to Apple's terms and privacy notices.</li>
             <li><strong>Other Users:</strong> your chosen profile information, photos, age (derived), city, preferences, and content you post (including in Moves and chat) are visible according to your settings and the App's functionality.</li>
             <li><strong>Law Enforcement/Legal:</strong> when required by law, court order, or to protect rights, safety, property, and to enforce our Terms.</li>
@@ -287,7 +287,7 @@
                         <td>name, email, user ID, device IDs, IP</td>
                         <td>you; device</td>
                         <td>account creation; authentication; security; notifications</td>
-                        <td>service providers (hosting, analytics); Apple (subscriptions)</td>
+                        <td>service providers (hosting, analytics); Apple/RevenueCat (subscriptions)</td>
                         <td>life of account + backups</td>
                     </tr>
                     <tr>
@@ -324,10 +324,10 @@
                     </tr>
                     <tr>
                         <td>Commercial info</td>
-                        <td>subscription tier, status</td>
-                        <td>Apple; us</td>
+                        <td>subscription tier, entitlements, purchase/renewal status</td>
+                        <td>Apple; RevenueCat; us</td>
                         <td>entitlements; customer support</td>
-                        <td>Apple; service providers</td>
+                        <td>Apple; RevenueCat; service providers</td>
                         <td>life of account</td>
                     </tr>
                 </tbody>
@@ -336,7 +336,7 @@
         <p>We do not provide financial incentives for the sale or retention of personal information as defined by California law.</p>
 
         <h2>8) Cookies/SDKs &amp; Do Not Track</h2>
-        <p>We do not use traditional web cookies in the App. We use SDKs (e.g., Firebase) that may collect device and usage information to provide analytics, messaging, and diagnostics. The App does not respond to "Do Not Track" signals; mobile OS privacy settings may offer relevant controls.</p>
+        <p>We do not use traditional web cookies in the App. We use SDKs (e.g., Firebase and RevenueCat) that may collect device, subscription, and usage information to provide analytics, messaging, diagnostics, and subscription entitlement management. The App does not respond to "Do Not Track" signals; mobile OS privacy settings may offer relevant controls.</p>
 
         <h2>9) Security</h2>
         <p>We use technical and organizational safeguards appropriate to the nature of the data, including: TLS encryption in transit; Firebase Authentication; App Check with App Attest/DeviceCheck; Firestore security rules; access controls and monitoring. No method of transmission or storage is 100% secure.</p>
