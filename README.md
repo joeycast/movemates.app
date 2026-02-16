@@ -62,15 +62,14 @@ Colors are defined as CSS variables in `styles.css` (lines 11-20):
 - Modify Premium feature details if offerings change
 - Update copyright year in footer
 
-## Deployment
+## Deployment (Cloudflare Pages)
 
-This is a static website that can be deployed to:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static hosting service
+This repo is configured for Cloudflare Pages and can auto-deploy from GitHub on every push to `main`.
 
-Simply upload the files to your hosting provider.
+### Redirect behavior
+
+`public/_redirects` enforces:
+- `www.movemates.app/* -> https://movemates.app/:splat` (301)
 
 ## Features Highlighted
 
